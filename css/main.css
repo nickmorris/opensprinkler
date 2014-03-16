@@ -1,0 +1,424 @@
+.logo {
+    height: 40px;
+    width: 159px;
+    background: url(../img/logo.png);
+    background-size: 159px 40px;
+    background-repeat:no-repeat;
+    margin: 1px auto;
+}
+#donate p {
+    text-align:center;
+    overflow: visible;
+    white-space: normal;
+}
+#settings ul li {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+#graphScrollLeft, #graphScrollRight {
+    position: absolute;
+    display:none;
+}
+.btn-no-border {
+    border: none;
+    background: none !important;
+    height: 25px;
+}
+.hideZone {
+    border: 5px solid rgba(255,255,255,0) !important;
+}
+.legend {
+    display:none;
+}
+#zones {
+    overflow-y: scroll;
+    display: none;
+}
+.log_type {
+    text-align: center;
+    padding-bottom:15px !important;
+}
+#versions {
+    text-align: center;
+    margin: 0;
+}
+#status_list .ui-li {
+    padding-bottom: 4px;
+}
+#status_header,#status_footer {
+    margin:0;
+    text-align: center;
+    font-size: smaller;
+}
+.ui-collapsible-heading-toggle {
+    font-weight: bold !important;
+}
+.mini-load {
+    zoom: 0.5;
+    height: 2.875em;
+    width: 2.875em;
+    margin:0 auto !important;
+    opacity:0.18;
+}
+#weather-list .ui-li-divider {
+    padding: 0.5em 0;
+    text-align: center;
+}
+#weather-list {
+    display:none;
+    width:20%;
+    float:left;
+    margin-right:10px;
+    margin-left: -1000px;
+    overflow-y:hidden
+}
+#info-list {
+    overflow: hidden;
+}
+#program-control-list {
+    clear:both;
+}
+.custom-count-pos{
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+    float: right;
+}
+#logs_list table {
+    color: black;
+    text-align: center;
+    text-shadow: none;
+    background: #fff;
+    border: 1px solid #b4b4b4;
+    font: bold 14px helvetica;
+    padding: 0;
+    margin-top:10px;
+    width: 100%;
+    -webkit-border-radius: 8px;
+}
+#logs_list table th {
+    border-bottom: 1px solid #b4b4b4;
+}
+#logs_list table tr td {
+    color: #666;
+    border-bottom: 1px solid #b4b4b4;
+    border-right: 1px solid #b4b4b4;
+    padding: 5px 5px 5px 5px;
+}
+#logs_list table tr td:last-child {
+    border-right: none;
+}
+#logs_list table tr:last-child td {
+    border-bottom: none;
+}
+.nobr {
+    white-space:nowrap
+}
+#footer-running, #showupdate {
+    font-weight: normal;
+    display: none;
+    padding: 2px 0;
+    font-size: medium;
+    margin: 0 -16px 0 -16px;
+    position: relative;
+}
+#running-icon {
+    width: 11px;
+    height: 11px;
+    background: url(../img/running.png);
+    background-size: 11px 11px;
+    background-repeat:no-repeat;
+    margin:auto auto auto 4px;
+    position:absolute;
+    top:0;bottom:0;
+ }
+#running-text {
+    margin:0;
+    text-shadow: none;
+    color: #ffffff;
+}
+#footer-running.green #running-text {
+    padding-left: 20px;
+}
+.rain-desc {
+    word-wrap:normal;
+    white-space:normal !important;
+    overflow:visible !important;
+    text-align:center;
+}
+#preview_header .ui-input-text {
+    display: inline-block;
+    width:75%;
+    vertical-align: text-top;
+}
+#preview_header {
+    width:100%;
+    white-space:nowrap;
+    text-align:center
+}
+#preview_header a {
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+.use_master {
+    width: 5%;
+    text-align: center;
+}
+.timeline-event-content a {
+    text-decoration: none;
+}
+:not(input) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+#raindelay, #sure, #add-user, #login {
+    width: 300px;
+}
+#manual ul, #forecast ul, #user-control-list {
+    max-width: 800px;
+    margin: 16px auto;
+}
+#sprinklers div[data-role="header"] .ui-icon {
+    background-color: transparent;
+    box-shadow: none;
+}
+#addprogram .ui-input-text, #programs .ui-input-text {
+    margin: 0.1em !important;
+}
+@media (max-width: 480px) {
+    #weather-list {
+        width:80px;
+    }
+    #weather-list li:not(.ui-li-divider) {
+        height: auto;
+    }
+    #logs_list .ui-li-aside {
+        width: 25% !important;
+        font-size: smaller;
+    }
+    #raindelay, #sure, #add-user, #login {
+        width: 250px;
+    }
+    div.timeline-frame {
+        counter-reset: station;
+    }
+    div.timeline-groups-text {
+        width: 22px;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    div.timeline-groups-text:before {
+        content: attr(data-shortname) "     ";
+        white-space:pre;
+    }
+    .ui-mini {
+        font-size: 12px;
+    }
+}
+@media (max-width: 940px) {
+    #weather .location {
+        font-size:8px;
+        font-weight: none;
+        white-space: normal !important;
+    }
+    .wicon {
+        zoom: .5;
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        display: block !important;
+    }
+}
+@media (max-width: 940px) and (min-width: 480px) {
+    .wicon {
+       margin: 0 auto !important;
+    }
+}
+
+div.ui-flipswitch {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.master {
+    background-color: #DEAD5D !important;
+}
+.program-0 {
+}
+.program-1 {
+    background-color: rgba(0,200,0,0.5) !important
+}
+.program-2 {
+    background-color: rgba(200,0,0,0.5) !important
+}
+.program-3 {
+    background-color: rgba(0,200,200,0.5) !important
+}
+.delayed {
+    background-color: #C96161 !important;
+    text-decoration: line-through;
+}
+.red {
+    background-color: #C96161 !important;
+    background: #C96161 !important;
+    color: #FFFFFF !important;
+    font-weight: normal;
+    text-shadow: none !important;
+}
+.green {
+    background-color: #16a085 !important;
+    background: #16a085 !important;
+    color: #FFFFFF !important;
+    font-weight: normal;
+    text-shadow: none !important;
+}
+.sname {
+    margin: -.4em 0 !important;
+}
+.rem {
+    margin-bottom: 0 !important;
+    font-size: 0.71em !important;
+}
+.ui-header .ui-title { margin-left: 1em; margin-right: 1em; }
+div[class*='ui-block-'], #log_options, .center {
+	text-align: center
+}
+.panelhelp {
+    white-space: normal
+}
+body{
+    margin: 0;
+}
+#timeline-navigation {
+    text-align: center;
+    display: none;
+}
+div.timeline-frame{border:1px solid #bebebe;overflow:hidden}div.timeline-axis{border-color:#bebebe;border-width:1px;border-top-style:solid}div.timeline-axis-grid{border-left-style:solid;border-width:1px}div.timeline-axis-grid-minor{border-color:#e5e5e5}div.timeline-axis-grid-major{border-color:#bfbfbf}div.timeline-axis-text{color:#4d4d4d;padding:3px;white-space:nowrap}div.timeline-event{color:#1a1a1a;border-color:#97b0f8;background-color:#d5ddf6;display:inline-block}div.timeline-event-selected{border-color:#ffc200;background-color:#fff785;z-index:999}div.timeline-event-cluster div.timeline-event-dot{border-color:#d5ddf6}div.timeline-event-box{text-align:center;border-style:solid;border-width:1px;border-radius:5px;-moz-border-radius:5px}div.timeline-event-dot{border-style:solid;border-width:5px;border-radius:5px;-moz-border-radius:5px}div.timeline-event-range{border-style:solid;border-width:1px;border-radius:2px;-moz-border-radius:2px}div.timeline-event-range-drag-left{cursor:w-resize;z-index:1000}div.timeline-event-range-drag-right{cursor:e-resize;z-index:1000}div.timeline-event-line{border-left-width:1px;border-left-style:solid}div.timeline-event-content{margin:5px;white-space:nowrap;overflow:hidden}div.timeline-groups-axis{border-color:#bebebe;border-width:1px}div.timeline-groups-text{color:#4d4d4d;padding-left:10px;padding-right:10px}div.timeline-currenttime{background-color:#ff7f6e;width:2px}div.timeline-customtime{background-color:#6e94ff;width:2px;cursor:move}
+div.timeline-frame {
+    border-color: #5D99C3;
+    border-radius: 5px;
+    -moz-border-radius: 5px; /* For Firefox 3.6 and older */
+}
+div.timeline-axis {
+    border-color: #5D99C3;
+    background-color: #5D99C3;
+}
+div.timeline-axis-grid {
+}
+div.timeline-groups-axis {
+    border-color: #5D99C3;
+}
+div.timeline-axis-text {
+    color: white;
+}
+div.timeline-groups-text {
+    color: #4D4D4D;
+}
+div.timeline-event {
+    color: white;
+    border-radius: 5px;
+}
+div.timeline-event-content {
+    padding: 5px;
+}
+
+#zones table {
+    margin: 0 auto;
+}
+
+#weather {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wicon {
+    vertical-align: middle;
+    display: inline-block;
+    width: 150px; height: 150px;
+    margin: -35px -10px -25px -30px;
+    background: url(../img/weather-icons-sprite.png);
+}
+
+#forecast .wicon {
+    margin: 0 auto !important;
+}
+
+/* Weather Icon Sprites
+ * http://www.alistapart.com/articles/sprites
+ * http://developer.yahoo.com/weather/#codes
+ */
+
+.wicon.cond0  { background-position: -150px -150px; }				/*  0   tornado                   */
+.wicon.cond1  { background-position: -150px -150px; }				/*  1   tropical storm            */
+.wicon.cond2  { background-position: -150px -150px; }				/*  2   hurricane                 */
+.wicon.cond3, .wicon.condchancetstorms,
+.wicon.condnt_chancetstorms  { background-position: -300px -150px; }	/*  3   severe thunderstorms      */
+.wicon.cond4, .wicon.condtstorms,
+.wicon.condnt_tstorms  { background-position: -300px -150px; }		/*  4   thunderstorms             */
+.wicon.cond5  { background-position:    0px -450px; }				/*  5   mixed rain and snow       */
+.wicon.cond6, .wicon.condchancesleet,
+.wicon.condnt_chancesleet  { background-position: -150px -450px; }	/*  6   mixed rain and sleet      */
+.wicon.cond7  { background-position:    0px -600px; }				/*  7   mixed snow and sleet      */
+.wicon.cond8  { background-position:    0px -600px; }				/*  8   freezing drizzle          */
+.wicon.cond9, .wicon.condchancerain,
+.wicon.condnt_chancerain { background-position: -150px -300px; }		/*  9   drizzle                   */
+.wicon.cond10, .wicon.condsleet,
+.wicon.condnt_sleet { background-position:    0px -450px; }			/*  10  freezing rain             */
+.wicon.cond11, .wicon.condrain,
+.wicon.condnt_rain { background-position:    0px    0px; }			/*  11  showers                   */
+.wicon.cond12 { background-position:    0px    0px; }				/*  12  showers                   */
+.wicon.cond13, .wicon.condflurries, .wicon.condnt_flurries, .wicon.condchanceflurries,
+.wicon.condnt_chanceflurries { background-position: -450px -150px; }	/*  13  snow flurries             */
+.wicon.cond14, .wicon.condchancesnow,
+.wicon.condnt_chancesnow { background-position: -300px -300px; }		/*  14  light snow showers        */
+.wicon.cond15 { background-position:    0px -150px; }				/*  15  blowing snow              */
+.wicon.cond16, .wicon.condsnow,
+.wicon.condnt_snow { background-position: -450px -150px; }			/*  16  snow                      */
+.wicon.cond17 { background-position: -300px -450px; }				/*  17  hail                      */
+.wicon.cond18, .wicon.condsleet,
+.wicon.condnt_sleet { background-position: -150px -450px; }			/*  18  sleet                     */
+.wicon.cond19 { background-position: -150px -600px; }				/*  19  dust                      */
+.wicon.cond20, .wicon.condfog,
+.wicon.condnt_fog { background-position: -150px -600px; }			/*  20  foggy                     */
+.wicon.cond21, .wicon.condhazy,
+.wicon.condnt_hazy { background-position: -150px -600px; }			/*  21  haze                      */
+.wicon.cond22 { background-position: -150px -600px; }				/*  22  smoky                     */
+.wicon.cond23 { background-position: -450px -300px; }				/*  23  blustery                  */
+.wicon.cond24 { background-position: -450px -300px; }				/*  24  windy                     */
+.wicon.cond25 { background-position:    0px -150px; }				/*  25  cold                      */
+.wicon.cond26, .wicon.condcloudy,
+.wicon.condnt_cloudy { background-position: -300px    0px; }			/*  26  cloudy                    */
+.wicon.cond27, .wicon.condnt_mostlycloudy,
+.wicon.condnt_partlysunny { background-position: -300px -600px; }	/*  27  mostly cloudy (night)     */
+.wicon.cond28, .wicon.condmostlycloudy,
+.wicon.condpartlysunny  { background-position:    0px -300px; }		/*  28  mostly cloudy (day)       */
+.wicon.cond29, .wicon.condnt_partlycloudy,
+.wicon.condnt_mostlysunny { background-position: -450px -600px; }	/*  29  partly cloudy (night)     */
+.wicon.cond30 , .wicon.condpartlycloudy,
+.wicon.condmostlysunny { background-position: -150px    0px; }		/*  30  partly cloudy (day)       */
+.wicon.cond31,
+.wicon.condnt_sunny { background-position: -450px -450px; }			/*  31  clear (night)             */
+.wicon.cond32, .wicon.condclear,
+.wicon.condsunny   { background-position: -450px    0px; }			/*  32  sunny                     */
+.wicon.cond33,
+.wicon.condnt_clear { background-position: -450px -450px; }			/*  33  fair (night)              */
+.wicon.cond34 { background-position: -450px    0px; }				/*  34  fair (day)                */
+.wicon.cond35 { background-position: -300px -450px; } 				/*  35  mixed rain and hail       */
+.wicon.cond36 { background-position: -450px    0px; } 				/*  36  hot                       */
+.wicon.cond37 { background-position: -300px -150px; } 				/*  37  isolated thunderstorms    */
+.wicon.cond38 { background-position: -300px -150px; } 				/*  38  scattered thunderstorms   */
+.wicon.cond39 { background-position: -300px -150px; } 				/*  39  scattered thunderstorms   */
+.wicon.cond40 { background-position:    0px    0px; } 				/*  40  scattered showers         */
+.wicon.cond41 { background-position: -450px -150px; } 				/*  41  heavy snow                */
+.wicon.cond42 { background-position:    0px -450px; } 				/*  42  scattered snow showers    */
+.wicon.cond43 { background-position: -450px -150px; } 				/*  43  heavy snow                */
+.wicon.cond44 { background-position: -150px    0px; } 				/*  44  partly cloudy             */
+.wicon.cond45 { background-position: -300px -150px; } 				/*  45  thundershowers            */
+.wicon.cond46 { background-position:    0px -450px; } 				/*  46  snow showers              */
+.wicon.cond47 { background-position: -300px -150px; } 				/*  47  isolated thundershowers   */
+.wicon.cond3200, .wicon.condunknown,
+.wicon.condnt_unknown { background: none; display: none; } 			/* 3200  not available             */
